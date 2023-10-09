@@ -1,5 +1,7 @@
  <!doctype html>
+ <!--Внутри html должен быть аттрибует lang-->
  <html>
+ <!--Отсутствует тег head. Title должен лежать в head-->
   <title>resume</title>
   <body>
 <form action="#" method="post" target="_blank">
@@ -18,6 +20,7 @@
         <label>Пол:</label>
          <br> <input type="checkbox" id="men" value="men" name="user_interest"><label class="light" for="men">Мужчина</label><br>
           <input type="checkbox" id="Women" value="Women" name="user_interest"><label class="light" for="Women">Женщина</label><br>
+          <!--for="law" некорректное значение. Нет элемента с id=law-->
           <input type="checkbox" id="helicopter" value="helicopter" name="user_interest"><label class="light" for="law">Боевой вертолет МИ-28Н</label>
         
       </li>
@@ -26,6 +29,7 @@
         <input type="number" name="age" placeholder="27" id="age" min="0" max="125">
       </li>
       <li>
+          <!--Некорректное использование legend-->
        <legend>Фото:</legend>   
        <input name="myFile" type="file">
      </li>
@@ -57,6 +61,7 @@
       </li>
     </ul>
   </fieldset>
+    <!--Тег закрыт некорректно. Видимо он лишний, поскольку нет открывающего тега-->
 </div>
 <fieldset>
     <legend>Учёба:</legend>
